@@ -42,7 +42,7 @@ export default function Benefits() {
       icon: Clock,
       title: "Investimento Mínimo de Tempo",
       description:
-        "Apenas 45-90 minutos em uma única sessão. Você escolhe o melhor horário e formato (presencial ou online).",
+        "Se selecionado, apenas 45-90 minutos de investimento em uma única sessão. Você escolhe o melhor horário e formato (presencial ou online).",
       color: "primary",
     },
     {
@@ -168,8 +168,8 @@ export default function Benefits() {
               <strong className="text-gray-900">
                 Empresas de todos os estágios são bem-vindas:
               </strong>{" "}
-              Desde as que já utilizam IA ativamente até aquelas que ainda não
-              adotaram. Todas as perspectivas são igualmente valiosas!
+              Mesmo que não utilize IA ativamente, mesmo que faça um uso básico
+              de redes sociais. Todas as perspectivas são igualmente valiosas!
             </p>
             <button
               onClick={() =>

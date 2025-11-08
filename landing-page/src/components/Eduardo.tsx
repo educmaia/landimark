@@ -171,7 +171,8 @@ export default function Eduardo() {
                   {[
                     {
                       title: "Secretário Municipal de Projetos",
-                      period: "Gestão Campaci (2009-2012)",
+                      period:
+                        "Prefeitura de Capivari - Gestão Campaci (2009-2012)",
                       description:
                         "Liderou projetos estratégicos como a implantação do Distrito Industrial ao lado do portal da cidade, pavimentação do Bairro Santa Rita, entre outras dezenas de obras significativas.",
                     },
@@ -195,7 +196,7 @@ export default function Eduardo() {
                       description: "",
                     },
                     {
-                      title: "Advogado",
+                      title: "Advogado - OAB/SP n.º 286.108",
                       period: "Camargo e Maia Advocacia (desde 2009)",
                       description: "",
                     },

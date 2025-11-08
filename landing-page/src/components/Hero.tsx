@@ -45,15 +45,16 @@ export default function Hero() {
               <strong className="text-gray-900">
                 Marketing Digital e uso de inteligência artificial
               </strong>{" "}
-              por micro, pequenas e médias empresas em Capivari-SP e ganhe
-              brindes.
+              por micro, pequenas e médias empresas em Capivari-SP e{" "}
+              <span className="text-gradient block mt-2">ganhe brindes.</span>
             </p>
 
             {/* Benefícios rápidos */}
             <div className="space-y-3 mb-8">
               {[
-                "Vídeo exclusivo sobre IA e Marketing Digital",
-                "Guia completo de ferramentas gratuitas",
+                "Guia completo de ferramentas de marketing ou gratuitas ou com bom limite de uso gratuito",
+                "Acesso a um vídeo exclusivo sobre IA e Marketing Digital (feito totalmente por IA)",
+                "Preencha em 2-3 minutos",
                 "Total confidencialidade garantida",
               ].map((benefit, index) => (
                 <motion.div
