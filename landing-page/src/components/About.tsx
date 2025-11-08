@@ -37,8 +37,16 @@ export default function About() {
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               Conduzida por <strong>Eduardo Camargo Maia</strong>, mestrando em
-              Business Administration pela MUST University, sob orientação do{" "}
-              <strong>Prof. Dr. Marcos Crivelaro</strong>.
+              Business Administration pela{" "}
+              <a
+                href="https://mustedu.com/pt/conecte-se-atraves-da-must-university/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-600 hover:underline font-semibold"
+              >
+                MUST University
+              </a>
+              , sob orientação do <strong>Prof. Dr. Marcos Crivelaro</strong>.
             </p>
 
             {/* Cards de destaque */}

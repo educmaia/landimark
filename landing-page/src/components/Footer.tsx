@@ -1,4 +1,4 @@
-import { Mail, MessageCircle, Linkedin, GraduationCap, Building2 } from "lucide-react";
+import { Mail, MessageCircle, Instagram, GraduationCap, Building2 } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -21,7 +21,14 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-2 text-sm">
               <Building2 className="w-4 h-4 text-primary-400" />
-              <span>MUST University</span>
+              <a
+                href="https://mustedu.com/pt/conecte-se-atraves-da-must-university/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary-400 transition-colors"
+              >
+                MUST University
+              </a>
             </div>
           </div>
 
@@ -65,13 +72,13 @@ export default function Footer() {
                 <span>WhatsApp: (19) 99126-0742</span>
               </a>
               <a
-                href="https://linkedin.com/in/eduardocamargomaia"
+                href="https://www.instagram.com/educmaia/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-sm hover:text-primary-400 transition-colors"
               >
-                <Linkedin className="w-5 h-5 flex-shrink-0" />
-                <span>LinkedIn</span>
+                <Instagram className="w-5 h-5 flex-shrink-0" />
+                <span>@educmaia</span>
               </a>
             </div>
           </div>
@@ -81,8 +88,16 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
             <p>
-              © {currentYear} Eduardo Camargo Maia • MUST University • Todos os
-              direitos reservados
+              © {currentYear} Eduardo Camargo Maia •{" "}
+              <a
+                href="https://mustedu.com/pt/conecte-se-atraves-da-must-university/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary-400 transition-colors"
+              >
+                MUST University
+              </a>{" "}
+              • Todos os direitos reservados
             </p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-primary-400 transition-colors">

@@ -55,8 +55,22 @@ export default function FAQ() {
     },
     {
       question: "Quem está conduzindo esta pesquisa?",
-      answer:
-        "A pesquisa é conduzida por Eduardo Camargo Maia, mestrando em Business Administration (Digital Marketing Concentration) pela MUST University, sob orientação do Prof. Dr. Marcos Crivelaro, seguindo rigorosos padrões acadêmicos e éticos.",
+      answer: (
+        <>
+          A pesquisa é conduzida por Eduardo Camargo Maia, mestrando em Business
+          Administration (Digital Marketing Concentration) pela{" "}
+          <a
+            href="https://mustedu.com/pt/conecte-se-atraves-da-must-university/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary-600 hover:underline font-semibold"
+          >
+            MUST University
+          </a>
+          , sob orientação do Prof. Dr. Marcos Crivelaro, seguindo rigorosos
+          padrões acadêmicos e éticos.
+        </>
+      ),
     },
   ];
 

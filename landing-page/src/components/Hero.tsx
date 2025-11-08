@@ -29,7 +29,15 @@ export default function Hero() {
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 rounded-full mb-6">
               <Sparkles className="w-5 h-5 text-primary-600" />
               <span className="text-sm font-semibold text-primary-700">
-                Pesquisa Acadêmica - MUST University
+                Pesquisa Acadêmica -{" "}
+                <a
+                  href="https://mustedu.com/pt/conecte-se-atraves-da-must-university/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  MUST University
+                </a>
               </span>
             </div>
 

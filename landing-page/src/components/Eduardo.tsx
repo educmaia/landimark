@@ -143,7 +143,21 @@ export default function Eduardo() {
                         </p>
                         {item.institution && (
                           <p className="text-sm text-gray-600">
-                            {item.institution}
+                            {item.highlight ? (
+                              <>
+                                <a
+                                  href="https://mustedu.com/pt/conecte-se-atraves-da-must-university/"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-primary-600 hover:underline font-semibold"
+                                >
+                                  Must University
+                                </a>{" "}
+                                (desde 2024)
+                              </>
+                            ) : (
+                              item.institution
+                            )}
                           </p>
                         )}
                       </div>
