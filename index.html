@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Camargo Maia - Marketing Digital e Gestão</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2c5282;
+            --accent-color: #3182ce;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --bg-light: #f7fafc;
+            --bg-white: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: white;
+            color: var(--primary-color);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Social Proof */
+        .social-proof {
+            background: var(--bg-light);
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        /* Eduardo Section */
+        .eduardo-section {
+            padding: 5rem 0;
+            background: var(--bg-white);
+        }
+
+        .eduardo-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .eduardo-photo {
+            text-align: center;
+        }
+
+        .photo-placeholder {
+            width: 100%;
+            max-width: 350px;
+            aspect-ratio: 3/4;
+            background: linear-gradient(135deg, var(--accent-color) 0%, var(--secondary-color) 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            margin: 0 auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .eduardo-bio {
+            background: var(--bg-light);
+            padding: 2.5rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .eduardo-bio h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .eduardo-bio h3 {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .eduardo-bio p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            color: var(--text-dark);
+        }
+
+        .highlight-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .highlight-box ul {
+            list-style-position: inside;
+            color: var(--text-dark);
+        }
+
+        .highlight-box li {
+            margin: 0.5rem 0;
+            padding-left: 0.5rem;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 5rem 0;
+            background: var(--bg-light);
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .eduardo-content {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">Eduardo Camargo Maia</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#social-proof">Conquistas</a></li>
+                <li><a href="#eduardo">Sobre Mim</a></li>
+                <li><a href="#about">O Projeto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1>Marketing Digital & Gestão Pública</h1>
+            <p>Pesquisa acadêmica sobre adoção de marketing digital em PMEs</p>
+            <a href="#eduardo" class="cta-button">Conheça Mais</a>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section id="social-proof" class="social-proof">
+        <div class="container">
+            <h2 class="section-title">Trajetória de Impacto</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Anos de Experiência</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Graduações</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Pós-Graduações</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2024</div>
+                    <div class="stat-label">Mestrando MBA</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eduardo Camargo Maia Section -->
+    <section id="eduardo" class="eduardo-section">
+        <div class="container">
+            <h2 class="section-title">Eduardo Camargo Maia</h2>
+            <div class="eduardo-content">
+                <div class="eduardo-photo">
+                    <div class="photo-placeholder">
+                        Foto<br>Eduardo Camargo Maia
+                    </div>
+                </div>
+                <div class="eduardo-bio">
+                    <h2>Quem Sou</h2>
+                    <p>
+                        Eduardo Camargo Maia é capivariano, 39 anos, filho da Dra. Doxinha (Ana Eudóxia) e de João Carlos Belluzzo Maia,
+                        bisneto do Dr. Agripino Maia, fundador da CANACAP, ASSOCAP e do Hospital onde hoje funciona o Hospital Unimed.
+                        Esposo de Maysa Maia, coordenadora pedagógica da Escola Fú Paulo no Bairro São João Batista e pai do Heitor de 7 anos
+                        e do Henrique de 5 anos.
+                    </p>
+
+                    <h3>Formação Acadêmica</h3>
+                    <div class="highlight-box">
+                        <ul>
+                            <li><strong>Graduação em Direito</strong> - PUC-CAMPINAS</li>
+                            <li><strong>Graduação em Administração</strong> - CNEC-Capivari</li>
+                            <li><strong>Graduação em Ciências Contábeis</strong> - CNEC-Capivari</li>
+                            <li><strong>Pós-Graduação em Direito Público</strong></li>
+                            <li><strong>Pós-Graduação em Gestão Pública</strong></li>
+                            <li><strong>Mestrando em Master of Business Administration - Digital Marketing</strong> - Must University (desde 2024)</li>
+                        </ul>
+                    </div>
+
+                    <h3>Experiência Profissional</h3>
+                    <p>
+                        <strong>Secretário Municipal de Projetos</strong> - Gestão Campaci (2009-2012)<br>
+                        Liderou projetos estratégicos como a implantação do Distrito Industrial ao lado do portal da cidade,
+                        pavimentação do Bairro Santa Rita, entre outras dezenas de obras significativas.
+                    </p>
+                    <p>
+                        <strong>Chefe de Gabinete</strong> - Prefeitura de Rafard (2013)<br>
+                        Atuou no governo de César Moreira, contribuindo para a gestão municipal.
+                    </p>
+                    <p>
+                        <strong>Executivo Público</strong> - Secretaria Estadual de Educação de São Paulo (desde 2014)<br>
+                        Cargo concursado, demonstrando compromisso com o serviço público.
+                    </p>
+                    <p>
+                        <strong>Administrador</strong> - Instituto Federal de São Paulo - Câmpus Capivari (desde 2014)<br>
+                        <strong>Advogado</strong> - Camargo e Maia Advocacia (desde 2014)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">Sobre o Projeto</h2>
+            <div class="about-content">
+                <p>
+                    Este projeto de pesquisa acadêmica tem como foco o estudo da adoção de marketing digital
+                    em pequenas e médias empresas (PMEs), utilizando modelos como UTAUT e frameworks de
+                    transformação digital.
+                </p>
+                <p>
+                    A pesquisa busca compreender os fatores que influenciam a adoção de tecnologias de
+                    marketing digital, incluindo o papel da inteligência artificial na criação de conteúdo
+                    estratégico personalizado.
+                </p>
+                <p>
+                    Com uma base sólida em gestão pública e privada, aliada à formação em marketing digital,
+                    o projeto combina teoria e prática para gerar insights valiosos para o ecossistema
+                    empresarial brasileiro.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Eduardo Camargo Maia. Projeto de Pesquisa Acadêmica - Must University</p>
+        </div>
+    </footer>
+</body>
+</html>
