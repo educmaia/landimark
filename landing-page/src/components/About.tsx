@@ -28,17 +28,16 @@ export default function About() {
             </h2>
 
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Esta pesquisa de mestrado investiga como as Micro, Pequenas e
+              Esta pesquisa de mestrado investiga se e como as Micro, Pequenas e
               Médias Empresas de <strong>Capivari-SP</strong> estão utilizando
-              ferramentas de{" "}
-              <strong>Inteligência Artificial Generativa</strong> em suas
-              estratégias de marketing digital.
+              ferramentas de <strong>Inteligência Artificial Generativa</strong>{" "}
+              em suas estratégias de marketing digital. Seu concorrente pode
+              estar à sua frente e todas as grandes empresas já usam.
             </p>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Conduzida por{" "}
-              <strong>Eduardo Camargo Maia</strong>, mestrando em Business
-              Administration pela MUST University, sob orientação do{" "}
+              Conduzida por <strong>Eduardo Camargo Maia</strong>, mestrando em
+              Business Administration pela MUST University, sob orientação do{" "}
               <strong>Prof. Dr. Marcos Crivelaro</strong>.
             </p>
 
@@ -91,10 +90,22 @@ export default function About() {
           >
             <div className="grid grid-cols-2 gap-6">
               {[
-                { number: "7-8", label: "Empresas Selecionadas", color: "primary" },
-                { number: "60-90", label: "Minutos de Entrevista", color: "secondary" },
+                {
+                  number: "6-8",
+                  label: "Empresas Selecionadas",
+                  color: "primary",
+                },
+                {
+                  number: "45-90",
+                  label: "Minutos de Entrevista para empresas selecionadas",
+                  color: "secondary",
+                },
                 { number: "100%", label: "Confidencial", color: "primary" },
-                { number: "3", label: "Setores Representados", color: "secondary" },
+                {
+                  number: "3",
+                  label: "Setores Representados",
+                  color: "secondary",
+                },
               ].map((stat, index) => (
                 <motion.div
                   key={index}

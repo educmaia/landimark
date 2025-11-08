@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles, TrendingUp } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
+import Image from "next/image";
 
 export default function Hero() {
   const scrollToForm = () => {
@@ -34,27 +35,26 @@ export default function Hero() {
 
             {/* Título principal */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-heading mb-6 leading-tight">
-              Sua Empresa Está
-              <span className="text-gradient block mt-2">
-                Pronta para a IA?
-              </span>
+              Como estão
+              <span className="text-gradient block mt-2">suas vendas?</span>
             </h1>
 
             {/* Subtítulo */}
             <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
               Participe de uma pesquisa pioneira sobre{" "}
               <strong className="text-gray-900">
-                Inteligência Artificial no Marketing Digital
+                Marketing Digital e uso de inteligência artificial
               </strong>{" "}
-              de PMEs em Capivari-SP
+              por micro, pequenas e médias empresas em Capivari-SP e ganhe
+              brindes.
             </p>
 
             {/* Benefícios rápidos */}
             <div className="space-y-3 mb-8">
               {[
-                "60-90 minutos de entrevista única",
+                "Vídeo exclusivo sobre IA e Marketing Digital",
+                "Guia completo de ferramentas gratuitas",
                 "Total confidencialidade garantida",
-                "Acesso exclusivo aos resultados da pesquisa",
               ].map((benefit, index) => (
                 <motion.div
                   key={index}
@@ -96,7 +96,9 @@ export default function Hero() {
               </motion.button>
               <motion.button
                 onClick={() =>
-                  document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
+                  document
+                    .getElementById("about")
+                    ?.scrollIntoView({ behavior: "smooth" })
                 }
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -114,66 +116,16 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative hidden lg:block"
           >
-            <div className="relative">
-              {/* Card de estatística flutuante */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.8 }}
-                className="absolute -top-8 -left-8 bg-white rounded-2xl shadow-2xl p-6 z-10"
-              >
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center">
-                    <TrendingUp className="w-6 h-6 text-primary-600" />
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-gray-900">87%</div>
-                    <div className="text-sm text-gray-600">
-                      PMEs adotando IA
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-
-              {/* Placeholder para imagem/ilustração */}
-              <div className="relative aspect-square bg-gradient-to-br from-primary-500 to-secondary-500 rounded-3xl shadow-2xl overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center text-white p-8">
-                    <Sparkles className="w-24 h-24 mx-auto mb-4 opacity-80" />
-                    <p className="text-2xl font-bold">
-                      Transformação Digital
-                    </p>
-                    <p className="text-lg opacity-90 mt-2">
-                      O futuro do marketing começa aqui
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Card flutuante inferior */}
-              <motion.div
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1 }}
-                className="absolute -bottom-8 -right-8 bg-white rounded-2xl shadow-2xl p-6"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="flex -space-x-3">
-                    {[1, 2, 3].map((i) => (
-                      <div
-                        key={i}
-                        className="w-10 h-10 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full border-2 border-white"
-                      />
-                    ))}
-                  </div>
-                  <div>
-                    <div className="text-sm font-semibold text-gray-900">
-                      7-8 empresas
-                    </div>
-                    <div className="text-xs text-gray-600">selecionadas</div>
-                  </div>
-                </div>
-              </motion.div>
+            {/* Imagem principal */}
+            <div className="relative aspect-square rounded-3xl shadow-2xl overflow-hidden">
+              <Image
+                src="/inicial.png"
+                alt="Marketing Digital e Inteligência Artificial para PMEs"
+                fill
+                className="object-cover"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+              />
             </div>
           </motion.div>
         </div>

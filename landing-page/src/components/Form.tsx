@@ -129,8 +129,10 @@ export default function Form() {
                   Inscrição Recebida!
                 </h3>
                 <p className="text-lg text-gray-600 mb-6">
-                  Obrigado por se inscrever. Entraremos em contato em breve para
-                  confirmar sua participação e agendar a entrevista.
+                  Obrigado por se inscrever! Entraremos em contato em breve para
+                  confirmar sua participação e agendar a entrevista. Você receberá
+                  acesso ao <strong>vídeo exclusivo sobre IA</strong> e ao{" "}
+                  <strong>guia de ferramentas</strong> após a confirmação.
                 </p>
                 <button
                   onClick={() => setSubmitStatus("idle")}

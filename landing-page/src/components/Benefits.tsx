@@ -8,10 +8,36 @@ import {
   TrendingUp,
   Award,
   Users,
+  Video,
+  BookOpen,
 } from "lucide-react";
 
+type Benefit = {
+  icon: any;
+  title: string;
+  description: string;
+  color: "primary" | "secondary";
+  highlight?: boolean;
+};
+
 export default function Benefits() {
-  const benefits = [
+  const benefits: Benefit[] = [
+    {
+      icon: Video,
+      title: "Vídeo Exclusivo sobre IA",
+      description:
+        "Receba acesso gratuito a um vídeo completo sobre Marketing Digital e IA, feito 100% com inteligência artificial e voltado especificamente para Micro e Pequenas Empresas.",
+      color: "primary",
+      highlight: true,
+    },
+    {
+      icon: BookOpen,
+      title: "Guia de Ferramentas",
+      description:
+        "Guia prático e completo com as melhores ferramentas de marketing digital para PMEs, incluindo opções gratuitas e pagas.",
+      color: "secondary",
+      highlight: true,
+    },
     {
       icon: Clock,
       title: "Investimento Mínimo de Tempo",
@@ -91,8 +117,19 @@ export default function Benefits() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group card hover:scale-105 transition-all duration-300"
+              className={`group card hover:scale-105 transition-all duration-300 relative ${
+                benefit.highlight
+                  ? "ring-2 ring-primary-500 shadow-xl bg-gradient-to-br from-primary-50 to-white"
+                  : ""
+              }`}
             >
+              {/* Badge de destaque */}
+              {benefit.highlight && (
+                <div className="absolute -top-3 -right-3 bg-gradient-to-r from-primary-600 to-secondary-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                  BÔNUS GRATUITO
+                </div>
+              )}
+
               <div
                 className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl mb-4 ${
                   benefit.color === "primary"

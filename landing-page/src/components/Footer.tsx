@@ -49,18 +49,18 @@ export default function Footer() {
             <h3 className="text-lg font-bold text-white mb-4">Contato</h3>
             <div className="space-y-3">
               <a
-                href="mailto:eduardo.maia@must.edu"
+                href="mailto:eduardo@camargoemaia.com"
                 className="flex items-center gap-3 text-sm hover:text-primary-400 transition-colors"
               >
                 <Mail className="w-5 h-5 flex-shrink-0" />
                 <span>eduardo.maia@must.edu</span>
               </a>
               <a
-                href="tel:+5519999999999"
+                href="tel:+551999126-0742"
                 className="flex items-center gap-3 text-sm hover:text-primary-400 transition-colors"
               >
                 <Phone className="w-5 h-5 flex-shrink-0" />
-                <span>(19) 9999-9999</span>
+                <span>(19) 99126-0742</span>
               </a>
               <a
                 href="https://linkedin.com/in/eduardocamargomaia"
@@ -101,8 +101,8 @@ export default function Footer() {
       <div className="bg-gray-950 py-4">
         <div className="container-custom">
           <p className="text-center text-xs text-gray-600">
-            Desenvolvido com Next.js, React e Tailwind CSS • Otimizado para
-            conversão e performance
+            Desenvolvido por Eduardo Camargo Maia com Inteligência Artificial
+            (Claude Code)
           </p>
         </div>
       </div>
