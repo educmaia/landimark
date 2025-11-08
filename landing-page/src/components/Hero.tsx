@@ -46,7 +46,9 @@ export default function Hero() {
                 Marketing Digital e uso de inteligência artificial
               </strong>{" "}
               por micro, pequenas e médias empresas em Capivari-SP e{" "}
-              <span className="text-gradient block mt-2">ganhe brindes.</span>
+              <strong>
+                <span className="text-gradient block mt-2">ganhe brindes.</span>
+              </strong>
             </p>
 
             {/* Benefícios rápidos */}

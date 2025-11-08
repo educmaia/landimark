@@ -96,8 +96,8 @@ export default function About() {
                   color: "primary",
                 },
                 {
-                  number: "45-90",
-                  label: "Minutos de Entrevista para empresas selecionadas",
+                  number: "2-3",
+                  label: "Minutos para questionário inicial",
                   color: "secondary",
                 },
                 { number: "100%", label: "Confidencial", color: "primary" },

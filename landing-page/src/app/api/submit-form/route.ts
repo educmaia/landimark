@@ -4,59 +4,72 @@ export async function POST(request: NextRequest) {
   try {
     const data = await request.json();
 
-    // Aqui você pode integrar com diferentes serviços:
+    // Validação básica
+    if (!data.email || !data.nomeEmpresa) {
+      return NextResponse.json(
+        { message: "Dados incompletos" },
+        { status: 400 }
+      );
+    }
 
-    // 1. Enviar para Google Sheets via API
-    // 2. Enviar para um CRM (HubSpot, Salesforce, etc.)
-    // 3. Enviar e-mail usando Resend, SendGrid, etc.
-    // 4. Salvar em banco de dados
-    // 5. Integrar com Notion, Airtable, etc.
+    // URL do Google Apps Script (configurada via variável de ambiente)
+    const googleSheetsUrl = process.env.GOOGLE_SHEETS_URL;
 
-    // Exemplo: Enviar e-mail usando Resend (instale: npm install resend)
-    /*
-    import { Resend } from 'resend';
-    const resend = new Resend(process.env.RESEND_API_KEY);
+    if (!googleSheetsUrl) {
+      console.error("GOOGLE_SHEETS_URL não configurada");
+      // Ainda retorna sucesso para não quebrar a UX, mas loga o erro
+      console.log("Dados que seriam salvos:", data);
+      return NextResponse.json(
+        { message: "Inscrição recebida com sucesso!" },
+        { status: 200 }
+      );
+    }
 
-    await resend.emails.send({
-      from: 'pesquisa@seudominio.com',
-      to: 'eduardo.maia@must.edu',
-      subject: 'Nova Inscrição - Pesquisa de Mestrado',
-      html: `
-        <h2>Nova Inscrição Recebida</h2>
-        <p><strong>Empresa:</strong> ${data.nomeEmpresa}</p>
-        <p><strong>Responsável:</strong> ${data.nomeResponsavel}</p>
-        <p><strong>E-mail:</strong> ${data.email}</p>
-        <p><strong>Telefone:</strong> ${data.telefone}</p>
-        <p><strong>Setor:</strong> ${data.setor}</p>
-        <p><strong>Usa IA:</strong> ${data.usaIA}</p>
-        <!-- Adicione mais campos conforme necessário -->
-      `,
+    // Envia para o Google Sheets
+    const sheetsResponse = await fetch(googleSheetsUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+      redirect: "follow",
     });
-    */
 
-    // Exemplo: Salvar no Google Sheets
-    /*
-    const sheetsResponse = await fetch(
-      'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec',
-      {
-        method: 'POST',
-        body: JSON.stringify(data),
-      }
-    );
-    */
+    // Verifica se a resposta foi bem-sucedida
+    if (!sheetsResponse.ok) {
+      console.error(
+        "Erro ao enviar para Google Sheets:",
+        sheetsResponse.status,
+        await sheetsResponse.text()
+      );
+      throw new Error("Falha ao salvar no Google Sheets");
+    }
 
-    // Por enquanto, apenas logamos no console (remova em produção)
-    console.log("Dados recebidos:", data);
+    const result = await sheetsResponse.json();
+    console.log("Dados salvos com sucesso no Google Sheets:", result);
 
-    // Simular sucesso
+    // Retorna sucesso
     return NextResponse.json(
-      { message: "Inscrição recebida com sucesso!" },
+      {
+        message: "Inscrição recebida com sucesso! Em breve entraremos em contato.",
+        success: true
+      },
       { status: 200 }
     );
   } catch (error) {
     console.error("Erro ao processar formulário:", error);
+
+    // Log detalhado do erro
+    if (error instanceof Error) {
+      console.error("Mensagem de erro:", error.message);
+      console.error("Stack trace:", error.stack);
+    }
+
     return NextResponse.json(
-      { message: "Erro ao processar inscrição" },
+      {
+        message: "Erro ao processar inscrição. Por favor, tente novamente.",
+        success: false
+      },
       { status: 500 }
     );
   }

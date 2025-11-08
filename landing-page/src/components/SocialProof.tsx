@@ -1,13 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { GraduationCap, Building2, Award, Users, FileText, ExternalLink } from "lucide-react";
+import {
+  GraduationCap,
+  Building2,
+  Award,
+  Users,
+  FileText,
+  ExternalLink,
+} from "lucide-react";
 
 export default function SocialProof() {
   const credentials = [
     {
       icon: GraduationCap,
-      title: "MUST University",
+      title: "MUST University - Florida - USA",
       description: "Mestrado em Business Administration",
     },
     {
@@ -116,7 +123,8 @@ export default function SocialProof() {
                       Transparência Total
                     </p>
                     <p className="font-bold text-gray-900 text-lg">
-                      Acesse e confira a dissertação sendo construída em tempo real
+                      Acesse e confira a dissertação sendo construída em tempo
+                      real
                     </p>
                   </div>
                 </div>
