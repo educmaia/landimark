@@ -126,10 +126,10 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative hidden lg:block"
+            className="relative"
           >
             {/* Imagem principal */}
-            <div className="relative aspect-square rounded-3xl shadow-2xl overflow-hidden">
+            <div className="relative aspect-square rounded-3xl shadow-2xl overflow-hidden max-w-md mx-auto lg:max-w-none">
               <Image
                 src="/inicial.png"
                 alt="Marketing Digital e Inteligência Artificial para PMEs"
