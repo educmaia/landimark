@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { User, GraduationCap, Briefcase, Heart, Users } from "lucide-react";
+import Image from "next/image";
 
 export default function Eduardo() {
   return (
@@ -38,14 +39,14 @@ export default function Eduardo() {
               className="lg:col-span-1"
             >
               <div className="relative">
-                <div className="aspect-[3/4] bg-gradient-to-br from-primary-500 to-secondary-500 rounded-3xl shadow-2xl overflow-hidden flex items-center justify-center">
-                  <div className="text-center text-white p-8">
-                    <GraduationCap className="w-32 h-32 mx-auto mb-4 opacity-80" />
-                    <p className="text-2xl font-bold">Eduardo Camargo Maia</p>
-                    <p className="text-lg opacity-90 mt-2">
-                      Mestrando em Business Administration
-                    </p>
-                  </div>
+                <div className="aspect-[3/4] rounded-3xl shadow-2xl overflow-hidden">
+                  <Image
+                    src="/familia.jpg"
+                    alt="Eduardo Camargo Maia e família"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
                 </div>
               </div>
             </motion.div>
