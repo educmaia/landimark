@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { GraduationCap, Building2, Award, Users } from "lucide-react";
+import { GraduationCap, Building2, Award, Users, FileText, ExternalLink } from "lucide-react";
 
 export default function SocialProof() {
   const credentials = [
@@ -89,6 +89,41 @@ export default function SocialProof() {
               100% Confidencial e Seguro • Aprovado por Comitê de Ética
             </span>
           </div>
+        </motion.div>
+
+        {/* Chamada para dissertação */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5 }}
+          className="mt-8"
+        >
+          <a
+            href="https://docs.google.com/document/d/1Qx2MwYPKQlwWZjHnrdIqoup41hysy6LqqkqGSRMyYlo/edit?tab=t.0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block max-w-2xl mx-auto"
+          >
+            <div className="p-6 bg-gradient-to-r from-primary-50 to-blue-50 border-2 border-primary-200 rounded-2xl hover:border-primary-400 hover:shadow-xl transition-all duration-300">
+              <div className="flex items-center justify-between gap-4">
+                <div className="flex items-center gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <FileText className="w-6 h-6 text-white" />
+                  </div>
+                  <div className="text-left">
+                    <p className="text-sm font-semibold text-primary-600 uppercase tracking-wider mb-1">
+                      Transparência Total
+                    </p>
+                    <p className="font-bold text-gray-900 text-lg">
+                      Acesse e confira a dissertação sendo construída em tempo real
+                    </p>
+                  </div>
+                </div>
+                <ExternalLink className="w-5 h-5 text-primary-600 group-hover:translate-x-1 transition-transform flex-shrink-0" />
+              </div>
+            </div>
+          </a>
         </motion.div>
       </div>
     </section>
