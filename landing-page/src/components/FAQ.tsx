@@ -36,7 +36,7 @@ export default function FAQ() {
     {
       question: "O que ganho ao participar?",
       answer:
-        "Você terá: (1) acesso exclusivo aos resultados consolidados da pesquisa, (2) reconhecimento acadêmico (se autorizado), (3) contribuição para o avanço do conhecimento sobre transformação digital em PMEs brasileiras, e (4) oportunidade de reflexão estratégica sobre suas práticas digitais.",
+        "Você terá: (1) acesso exclusivo a uma inteligência artificial especializada em marketing digital para MPMEs - tire todas as suas dúvidas, (2) guia completo de ferramentas de marketing gratuitas ou com bom limite de uso gratuito, (3) vídeo exclusivo sobre IA e Marketing Digital, (4) acesso aos resultados consolidados da pesquisa, (5) reconhecimento acadêmico (se autorizado), e (6) contribuição para o avanço do conhecimento sobre transformação digital em PMEs brasileiras.",
     },
     {
       question: "Como será a entrevista? Preciso me preparar?",
