@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aceitação do Usuário de Tecnologia da Informação Em Direção a uma Visão Unificada</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px 30px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .header h1 {
+            margin: 0 0 10px 0;
+            color: #333;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        
+        .header .subtitle {
+            margin: 0;
+            color: #666;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+        
+        .markmap-container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            position: relative;
+            height: 80vh;
+            min-height: 600px;
+        }
+        
+        .markmap {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .controls {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            z-index: 10;
+            display: flex;
+            gap: 8px;
+        }
+        
+        .control-btn {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.2s;
+            backdrop-filter: blur(5px);
+        }
+        
+        .control-btn:hover {
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .info {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 12px;
+            color: #666;
+            backdrop-filter: blur(5px);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 15px 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .header .subtitle {
+                font-size: 14px;
+            }
+            
+            .markmap-container {
+                height: 70vh;
+                min-height: 500px;
+            }
+            
+            .controls {
+                top: 10px;
+                right: 10px;
+                gap: 5px;
+            }
+            
+            .control-btn {
+                padding: 6px 10px;
+                font-size: 11px;
+            }
+            
+            .info {
+                bottom: 10px;
+                left: 10px;
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Aceitação do Usuário de Tecnologia da Informação Em Direção a uma Visão Unificada</h1>
+            <div class="subtitle">> _"Quais são os determinantes fundamentais da aceitação individual de tecnologia?"_</div>
+        </div>
+        
+        <div class="markmap-container">
+            <div class="controls">
+                <button class="control-btn" onclick="window.location.reload()">↻ Recarregar</button>
+                <button class="control-btn" onclick="toggleFullscreen()">⛶ Fullscreen</button>
+            </div>
+            
+            <div class="info">
+                <strong>Dicas:</strong> Use o scroll para zoom • Clique e arraste para mover • Clique nos nós para expandir/recolher
+            </div>
+            
+            <div class="markmap">
+                <script type="text/template">
+---
+markmap:
+  initialExpandLevel: 2
+  colorFreezeLevel: 2
+  maxWidth: 300
+---
+# 📄 Aceitação do Usuário de Tecnologia da Informação: Em Direção a uma Visão Unificada 📄
+
+## 👥 Autores e Publicação
+
+### Autores principais
+
+#### **Viswanath Venkatesh**
+
+##### Robert H. Smith School of Business - University of Maryland
+
+#### **Michael G. Morris**
+
+##### McIntire School of Commerce - University of Virginia
+
+#### **Gordon B. Davis**
+
+##### Carlson School of Management - University of Minnesota
+
+#### **Fred D. Davis**
+
+##### Sam M. Walton College of Business - University of Arkansas
+
+### Instituição(ões)
+
+#### University of Maryland, University of Virginia, University of Minnesota, University of Arkansas
+
+### Periódico/Conferência
+
+#### _MIS Quarterly_
+
+### Ano de publicação
+
+#### **2003** - Vol. 27, No. 3, pp. 425-478
+
+### DOI/Link
+
+#### https://www.jstor.org/stable/30036540
+
+## 🔍 Contexto e Problema de Pesquisa
+
+### 🎯 Problema Central
+
+#### Como integrar os múltiplos modelos competidores de aceitação de tecnologia em uma teoria unificada?
+
+#### Pergunta de pesquisa
+
+##### _"Quais são os determinantes fundamentais da aceitação individual de tecnologia que podem ser integrados em um modelo unificado?"_
+
+#### Contexto histórico/atual
+
+##### **50%** de novos investimentos de capital em organizações desde 1980 foram em TI
+
+##### Explicar aceitação de tecnologia é uma das áreas mais maduras da pesquisa em SI
+
+### 📊 Lacuna Identificada
+
+#### Gaps na literatura
+
+##### Múltiplos modelos competidores sem integração
+
+##### Pesquisadores confrontados com escolha entre modelos
+
+##### Necessidade de síntese para progresso teórico
+
+#### Necessidade do estudo
+
+##### Comparação empírica abrangente dos 8 modelos principais
+
+##### Desenvolvimento de teoria unificada
+
+### 💡 Justificativa do Estudo
+
+#### Relevância teórica
+
+##### Unificação de conhecimento fragmentado
+
+##### Avanço na teoria cumulativa
+
+#### Relevância prática
+
+##### Ferramenta útil para gestores avaliarem sucesso de novas tecnologias
+
+##### Compreensão dos direcionadores de aceitação para 设计 intervenções proativas
+
+#### Relevância social/econômica
+
+##### Melhor compreensão da adoção tecnológica em organizações
+
+## 🎯 Objetivos
+
+### Objetivo Geral
+
+#### Desenvolver e validar uma teoria unificada de aceitação e uso de tecnologia (UTAUT)
+
+#### Descrição completa
+
+##### Integrar elementos de oito modelos proeminentes de aceitação de tecnologia
+
+### Objetivos Específicos
+
+#### 1️⃣ Revisar modelos existentes de aceitação do usuário
+
+##### Identificar oito modelos proeminentes
+
+##### Discutir similaridades e diferenças
+
+#### 2️⃣ Comparar empiricamente os oito modelos
+
+##### Validação longitudinal em quatro organizações
+
+##### Análise comparativa do poder explicativo
+
+#### 3️⃣ Formular modelo unificado (UTAUT)
+
+##### Baseado em similaridades conceituais e empíricas
+
+#### 4️⃣ Validar empiricamente a UTAUT
+
+##### Teste nos dados originais
+
+##### Validação cruzada em duas novas organizações
+
+### Hipóteses (se houver)
+
+#### H1: Expectativa de desempenho influenciará intenção comportamental, moderada por gênero e idade
+
+#### H2: Expectativa de esforço influenciará intenção comportamental, moderada por gênero, idade e experiência
+
+#### H3: Influência social influenciará intenção comportamental, moderada por gênero, idade, voluntariedade e experiência
+
+#### H4a: Condições facilitadoras não influenciarão significativamente a intenção comportamental
+
+#### H4b: Condições facilitadoras influenciarão o uso, moderada por idade e experiência
+
+#### H5: Autoeficácia, ansiedade e atitude não terão influência direta na intenção comportamental
+
+#### H6: Intenção comportamental terá influência positiva significativa no uso
+
+## 📚 Referencial Teórico
+
+### Conceitos-Chave
+
+#### Aceitação de Tecnologia
+
+##### Definição: Processo pelo qual indivíduos decidem usar ou não uma nova tecnologia
+
+##### Autores principais: Davis, Venkatesh, Ajzen
+
+#### Intenção Comportamental
+
+##### Definição: Indicação da disposição de uma pessoa em tentar realizar um comportamento
+
+##### Papel crítico como preditor de comportamento
+
+### Modelos/Teorias Utilizados
+
+#### Teoria da Ação Racional (TRA)
+
+##### Descrição: Modelo fundamental da psicologia social
+
+##### Variáveis/Construtos
+
+###### Atitude em relação ao comportamento
+
+###### Norma subjetiva
+
+##### Aplicação no estudo
+
+##### Base para muitos modelos subsequentes
+
+#### Tecnologia Acceptance Model (TAM)
+
+##### Descrição: Modelo adaptado para contextos de SI
+
+##### Variáveis/Construtos
+
+###### Percepção de utilidade
+
+###### Percepção de facilidade de uso
+
+##### Aplicação no estudo
+
+##### Um dos modelos mais influentes
+
+#### Motivational Model (MM)
+
+##### Descrição: Baseado em teoria geral da motivação
+
+##### Variáveis/Construtos
+
+###### Motivação extrínseca
+
+###### Motivação intrínseca
+
+##### Aplicação no estudo
+
+##### Foco em recompensas e prazer intrínseco
+
+#### Teoria do Comportamento Planejado (TPB)
+
+##### Descrição: Extensão da TRA adicionando controle comportamental percebido
+
+##### Variáveis/Construtos
+
+###### Atitude
+
+###### Norma subjetiva
+
+###### Controle comportamental percebido
+
+##### Aplicação no estudo
+
+##### Modelo abrangente de comportamento humano
+
+#### Combined TAM-TPB (C-TAM-TPB)
+
+##### Descrição: Modelo híbrido combinando elementos de TAM e TPB
+
+##### Variáveis/Construtos
+
+###### Utilidade percebida
+
+###### Atitude
+
+###### Norma subjetiva
+
+###### Controle comportamental percebido
+
+##### Aplicação no estudo
+
+##### Integração de duas abordagens principais
+
+#### Model of PC Utilization (MPCU)
+
+##### Descrição: Baseado na teoria do comportamento humano de Triandis
+
+##### Variáveis/Construtos
+
+###### Adequação ao trabalho
+
+###### Complexidade
+
+###### Consequências de longo prazo
+
+###### Afeto em relação ao uso
+
+###### Fatores sociais
+
+###### Condições facilitadoras
+
+##### Aplicação no estudo
+
+##### Perspectiva alternativa à TRA/TPB
+
+#### Innovation Diffusion Theory (IDT)
+
+##### Descrição: Baseada em sociologia, estudando difusão de inovações
+
+##### Variáveis/Construtos
+
+###### Vantagem relativa
+
+###### Facilidade de uso
+
+###### Imagem
+
+###### Visibilidade
+
+###### Compatibilidade
+
+###### Voluntariedade de uso
+
+##### Aplicação no estudo
+
+##### Foco em características da inovação
+
+#### Social Cognitive Theory (SCT)
+
+##### Descrição: Uma das teorias mais poderosas do comportamento humano
+
+##### Variáveis/Construtos
+
+###### Expectativas de resultado
+
+###### Autoeficácia
+
+###### Afeto
+
+###### Ansiedade
+
+##### Aplicação no estudo
+
+##### Foco em aprendizagem social e cognição
+
+### Estudos Anteriores Relevantes
+
+#### Davis et al. (1989)
+
+##### Autores: Davis, Bagozzi, Warshaw
+
+##### Principais achados
+
+###### Comparação entre TRA e TAM
+
+###### TAM explicou 47-51% da variância na intenção
+
+##### Relação com pesquisa atual
+
+##### Primeira comparação empírica entre modelos
+
+#### Taylor e Todd (1995b)
+
+##### Autores: Taylor, Todd
+
+##### Principais achados
+
+###### Comparação entre TAM, TPB e DTPB
+
+###### DTPB teve melhor poder explicativo (60%)
+
+##### Relação com pesquisa atual
+
+##### Importante estudo comparativo anterior
+
+## 🔬 Metodologia
+
+### Caracterização da Pesquisa
+
+#### Natureza
+
+##### Aplicada
+
+#### Abordagem
+
+##### Quantitativa
+
+#### Tipo
+
+##### Longitudinal
+
+#### Estratégia
+
+##### Estudo de campo múltiplo
+
+### Population e Amostra
+
+#### População-alvo
+
+##### Funcionários em organizações implementando novas tecnologias
+
+#### Tipo de amostragem
+
+##### Intencional (heterogênea)
+
+#### Tamanho da amostra
+
+##### **215 participantes** nos estudos principais
+
+##### **133 participantes** na validação cruzada
+
+#### Critérios de inclusão/exclusão
+
+##### Funcionários sendo introduzidos a novas tecnologias no trabalho
+
+### Instrumentos de Coleta de Dados
+
+#### Questionário
+
+##### Tipo: Questionário estruturado
+
+##### Estrutura
+
+###### Itens validados de todos os 8 modelos
+
+###### Escala de 7 pontos
+
+##### Validação
+
+###### Pré-testado com foco grupo de 5 profissionais
+
+### Procedimentos de Coleta
+
+#### Etapa 1
+
+##### Coleta pós-treinamento (T1)
+
+#### Etapa 2
+
+##### Coleta um mês após implementação (T2)
+
+#### Etapa 3
+
+##### Coleta três meses após implementação (T3)
+
+#### Período de coleta
+
+##### Seis meses total
+
+##### Uso real medido através de logs do sistema
+
+### Técnicas de Análise de Dados
+
+#### Análise quantitativa
+
+##### Software utilizado: `PLS Graph` (Version 2.91.03.04)
+
+##### Testes estatísticos
+
+###### Bootstrapping (500 vezes)
+
+###### Análise de validade convergente e discriminante
+
+### Considerações Éticas
+
+#### Termo de consentimento
+
+##### Participação voluntária
+
+##### Anonimato garantido
+
+## 📊 Principais Achados
+
+### 🔑 Achado 1: **Comparação dos 8 Modelos**
+
+#### 📈 Evidências Quantitativas
+
+##### Variância explicada na intenção: **17% a 53%**
+
+##### TRA: 30% (T1), 26% (T2), 19% (T3)
+
+##### TAM: 38% (T1), 36% (T2), 37% (T3)
+
+##### TPB: 37% (T1), 25% (T2), 21% (T3)
+
+#### 💬 Evidências Qualitativas
+
+##### Construtos relacionados a desempenho foram os mais fortes preditores em todos os modelos
+
+##### Influência social só foi significativa em contextos obrigatórios
+
+#### 🎯 Implicações
+
+##### Necessidade de integração dos modelos
+
+##### Identificação de construtos comuns
+
+### 🔑 Achado 2: **Desenvolvimento da UTAUT**
+
+#### 📈 Evidências
+
+##### Quatro determinantes diretos principais
+
+###### Expectativa de desempenho
+
+###### Expectativa de esforço
+
+###### Influência social
+
+###### Condições facilitadoras
+
+#### 💬 Contexto
+
+##### Três determinantes de intenção
+
+##### Dois determinantes de uso
+
+#### 🎯 Implicações
+
+##### Modelo unificado e parcimonioso
+
+##### Integração de 32 construtos originais em 4 principais
+
+### 🔑 Achado 3: **Validação da UTAUT**
+
+#### 📈 Evidências
+
+##### **R² ajustado de 69%** nos dados originais
+
+##### **R² ajustado de 70%** na validação cruzada
+
+##### Melhor que todos os modelos individuais
+
+#### 💬 Evidências qualitativas
+
+##### Todas as hipóteses principais suportadas
+
+##### Interações complexas entre moderadores
+
+#### 🎯 Implicações
+
+##### Poder preditivo substancialmente superior
+
+##### Validação robusta em múltiplos contextos
+
+### 🔑 Achado 4: **Papel dos Moderadores**
+
+#### 📈 Evidências
+
+##### Gênero moderou 3 relações principais
+
+##### Idade moderou todas as relações principais
+
+##### Experiência afetou a saliência de múltiplos construtos
+
+#### 💬 Contexto
+
+##### Interações complexas (ex: gênero x idade x experiência)
+
+##### Padrões diferentes para homens vs mulheres
+
+#### 🎯 Implicações
+
+##### Importância crítica de análise contextual
+
+##### Necessidade de considerar múltiplos moderadores simultaneamente
+
+## 💭 Discussão
+
+### Interpretação dos Resultados
+
+#### Em relação ao objetivo 1 (Revisão)
+
+##### Identificação bem-sucedida dos 8 modelos principais
+
+##### Mapeamento de similaridades e diferenças
+
+#### Em relação ao objetivo 2 (Comparação)
+
+##### Poder explicativo variável entre modelos
+
+##### Importância do contexto (voluntário vs obrigatório)
+
+#### Em relação ao objetivo 3 (Formulação)
+
+##### Integração bem-sucedida em modelo unificado
+
+##### Manutenção de parcimônia
+
+#### Em relação ao objetivo 4 (Validação)
+
+##### Suporte empírico forte para UTAUT
+
+##### Generalização para novos contextos
+
+### Comparação com Literatura
+
+#### Convergências
+
+##### Estudo X: Davis et al. (1989) - importância da utilidade percebida
+
+##### Estudo Y: Taylor e Todd (1995b) - superioridade de modelos combinados
+
+#### Divergências
+
+##### Estudo Z: Pesquisas anteriores não consideraram múltiplos moderadores simultaneamente
+
+##### Possíveis explicações
+
+###### Complexidade metodológica
+
+###### Amostras limitadas
+
+### Contribuições Teóricas
+
+#### Para o campo de SI
+
+##### Teoria unificada para aceitação de tecnologia
+
+##### Resolução de fragmentação teórica
+
+#### Para teoria/modelo X
+
+##### Síntese de 8 modelos em UTAUT
+
+##### Identificação de construtos fundamentais
+
+### Contribuições Práticas
+
+#### Para gestores/profissionais
+
+##### Ferramenta para avaliar sucesso de implementações
+
+##### Guia para 设计 intervenções direcionadas
+
+#### Para políticas públicas
+
+##### Compreensão de barreiras à adoção tecnológica
+
+### Limitações do Estudo
+
+#### Limitação 1: Escalas de medição
+
+##### Natureza: Itens de maior carga usados por razões analíticas
+
+##### Impacto nos resultados: Possível comprometimento da validade de conteúdo
+
+#### Limitação 2: Generalização
+
+##### Natureza: Limitado a contextos organizacionais
+
+##### Impacto nos resultados: Pode não se aplicar a consumidores
+
+#### Limitação 3: Foco em intenção
+
+##### Natureza: Uso real medido apenas como consequência
+
+##### Impacto nos resultados: Fatores situacionais podem moderar relação intenção-comportamento
+
+## ✅ Conclusões
+
+### Síntese dos Principais Resultados
+
+#### UTAUT explica **70%** da variância na intenção de uso
+
+##### Quatro determinantes diretos principais
+
+##### Quatro moderadores significativos
+
+### Resposta à Pergunta de Pesquisa
+
+> _"Quais são os determinantes fundamentais da aceitação individual de tecnologia?"_
+
+#### Resposta
+
+##### Expectativa de desempenho, esforço, influência social e condições facilitadoras são os determinantes fundamentais
+
+##### Moderados por gênero, idade, experiência e voluntariedade
+
+### Confirmação/Rejeição de Hipóteses
+
+#### ✅ H1 confirmada: Expectativa de desempenho moderada por gênero e idade
+
+#### ✅ H2 confirmada: Expectativa de esforço moderada por gênero, idade e experiência
+
+#### ✅ H3 confirmada: Influência social moderada por quatro fatores
+
+#### ✅ H4a confirmada: Condições facilitadoras não predizem intenção
+
+#### ✅ H4b confirmada: Condições facilitadoras predizem uso
+
+#### ✅ H5 confirmada: Autoeficácia, ansiedade e atitude não são preditores diretos
+
+#### ✅ H6 confirmada: Intenção prediz uso
+
+### Implicações Gerais
+
+#### Teóricas
+
+##### Base unificada para pesquisa futura
+
+##### Resolução de fragmentação no campo
+
+#### Práticas
+
+##### Ferramenta robusta para gestores
+
+##### Orientação para intervenções direcionadas
+
+## 🔮 Direções Futuras de Pesquisa
+
+### Sugestão 1: Desenvolvimento de escalas aprimoradas
+
+#### Justificativa
+
+##### Escalas atuais são preliminares
+
+##### Necessidade de maior validade de conteúdo
+
+### Sugestão 2: Investigação de antecedentes dos construtos
+
+#### Justificativa
+
+##### UTAUT descreve mas não explica formação dos construtos
+
+##### Necessidade de entender causas raiz
+
+### Sugestão 3: Estudos em diferentes contextos
+
+#### Justificativa
+
+##### Pesquisa atual limitada a organizações
+
+##### Necessidade de testar em contextos de consumo
+
+### Sugestão 4: Ligação com resultados organizacionais
+
+#### Justificativa
+
+##### Aceitação não garante sucesso organizacional
+
+##### Necessidade de estudar impacto no desempenho
+
+### Sugestão 5: Investigação de mecanismos psicológicos
+
+#### Justificativa
+
+##### Gênero e idade podem ser proxy para outros fatores
+
+##### Necessidade de estudar papéis de gênero e fatores cognitivos
+
+## 📎 Informações Adicionais
+
+### Financiamento
+
+#### Não mencionado no artigo
+
+### Conflito de interesses
+
+#### Os autores declaram não haver conflito de interesses
+
+### Agradecimentos
+
+#### A Cynthia Beath (editora sênior associada)
+
+#### Aos revisores anônimos
+
+#### A Heather Adams, Wynne Chin, Deborah Compeau, Shawn Curley, Ruth Kanfer, Phillip Ackerman, Tracy Ann Sykes, Peter Todd, Shreevardhan Lele, e Paul Zantek
+
+#### A Jan DeGross pelo trabalho de diagramação
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Configuração do Markmap
+        window.markmap = {
+            autoLoader: {
+                manual: false,
+                toolbar: false
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@latest"></script>
+    
+    <script>
+        function toggleFullscreen() {
+            const elem = document.querySelector('.markmap-container');
+            if (!document.fullscreenElement) {
+                elem.requestFullscreen().catch(err => {
+                    console.log(`Error attempting to enable fullscreen: ${err.message}`);
+                });
+            } else {
+                document.exitFullscreen();
+            }
+        }
+        
+        // Atalhos de teclado
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'F11') {
+                e.preventDefault();
+                toggleFullscreen();
+            }
+            if (e.key === 'F5' || (e.ctrlKey && e.key === 'r')) {
+                e.preventDefault();
+                window.location.reload();
+            }
+        });
+    </script>
+</body>
+</html>

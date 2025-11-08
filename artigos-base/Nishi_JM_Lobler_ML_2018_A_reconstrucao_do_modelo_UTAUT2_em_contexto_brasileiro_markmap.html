@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A (Re)Construção do Modelo UTAUT 2 em Contexto Brasileiro</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px 30px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .header h1 {
+            margin: 0 0 10px 0;
+            color: #333;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        
+        .header .subtitle {
+            margin: 0;
+            color: #666;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+        
+        .markmap-container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            position: relative;
+            height: 80vh;
+            min-height: 600px;
+        }
+        
+        .markmap {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .controls {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            z-index: 10;
+            display: flex;
+            gap: 8px;
+        }
+        
+        .control-btn {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.2s;
+            backdrop-filter: blur(5px);
+        }
+        
+        .control-btn:hover {
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .info {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 12px;
+            color: #666;
+            backdrop-filter: blur(5px);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 15px 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .header .subtitle {
+                font-size: 14px;
+            }
+            
+            .markmap-container {
+                height: 70vh;
+                min-height: 500px;
+            }
+            
+            .controls {
+                top: 10px;
+                right: 10px;
+                gap: 5px;
+            }
+            
+            .control-btn {
+                padding: 6px 10px;
+                font-size: 11px;
+            }
+            
+            .info {
+                bottom: 10px;
+                left: 10px;
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>A (Re)Construção do Modelo UTAUT 2 em Contexto Brasileiro</h1>
+            <div class="subtitle">> _"Qual seria o design do modelo UTAUT 2 em contexto brasileiro?"_</div>
+        </div>
+        
+        <div class="markmap-container">
+            <div class="controls">
+                <button class="control-btn" onclick="window.location.reload()">↻ Recarregar</button>
+                <button class="control-btn" onclick="toggleFullscreen()">⛶ Fullscreen</button>
+            </div>
+            
+            <div class="info">
+                <strong>Dicas:</strong> Use o scroll para zoom • Clique e arraste para mover • Clique nos nós para expandir/recolher
+            </div>
+            
+            <div class="markmap">
+                <script type="text/template">
+---
+markmap:
+  initialExpandLevel: 2
+  colorFreezeLevel: 2
+  maxWidth: 300
+---
+# 📄 A (Re)Construção do Modelo UTAUT 2 em Contexto Brasileiro 📄
+
+## 👥 Autores e Publicação
+
+### Autores principais
+
+#### **Juliana Mayumi Nishi**
+
+##### Universidade Federal de Santa Maria (UFSM)
+
+#### **Mauri Leodir Löbler**
+
+##### Universidade Federal de Santa Maria (UFSM)
+
+### Instituição(ões)
+
+#### Universidade Federal de Santa Maria (UFSM)
+
+### Periódico/Conferência
+
+#### XXI SEMEAD - Seminários em Administração
+
+### Ano de publicação
+
+#### 2018
+
+### DOI/Link
+
+#### ISSN 2177-3866
+
+## 🔍 Contexto e Problema de Pesquisa
+
+### 🎯 Problema Central
+
+#### Como seria o design do modelo UTAUT 2 no Brasil?
+
+##### Especificamente com smartphone no contexto brasileiro
+
+#### Pergunta de pesquisa
+
+##### Qual seria o design do modelo UTAUT 2 em contexto brasileiro?
+
+#### Contexto histórico/atual
+
+##### Smartphone teve aumento de **25%** nas taxas de propriedade (PEW RESEARCH CENTER, 2016)
+
+##### Interdependência tecnológica crescente na sociedade
+
+##### Paradoxos tecnológicos influenciam adoção
+
+###### Controle vs. caos
+
+###### Liberdade vs. escravidão
+
+###### Novo vs. obsoleto
+
+### 📊 Lacuna Identificada
+
+#### Gaps na literatura
+
+#### Poucos estudos sobre UTAUT 2 em contexto brasileiro
+
+##### Apenas 10 artigos em eventos nacionais (2012-2017)
+
+##### **Nenhum** focado especificamente em smartphone
+
+#### Falta de estudos em países emergentes
+
+##### Maioria focada em Europa, Ásia e América do Norte
+
+#### Necessidade do estudo
+
+#### Validar modelo transculturalmente
+
+#### Incluir características específicas do consumidor brasileiro
+
+### 💡 Justificativa do Estudo
+
+#### Relevância teórica
+
+##### UTAUT 2 apresenta **74%** de variância explicativa
+
+##### Único modelo que considera perfil do consumidor como moderador
+
+#### Relevância prática
+
+#### **91%** das empresas brasileiras são PMEs (contexto de aplicação)
+
+#### Gestores podem criar estratégias de inovação
+
+#### Operadoras e reguladoras podem melhorar acessibilidade
+
+#### Relevância social/econômica
+
+#### Contribuir para inclusão digital
+
+#### Reduzir desigualdades de uso
+
+## 🎯 Objetivos
+
+### Objetivo Geral
+
+#### Investigar o design do modelo UTAUT 2 em contexto brasileiro em relação ao uso de smartphones
+
+### Objetivos Específicos
+
+#### Objetivo 1
+
+##### Validar transculturalmente a Teoria Unificada de Aceitação e Uso da Tecnologia 2 (UTAUT 2) em contexto brasileiro
+
+#### Objetivo 2
+
+##### Examinar a influência das variáveis moderadoras do modelo original (idade, gênero e experiência) em contexto brasileiro
+
+#### Objetivo 3
+
+##### Incluir e testar as variáveis escolaridade, renda e estado civil como moderadoras do modelo UTAUT 2 no Brasil
+
+### Hipóteses (se houver)
+
+#### H1: O modelo UTAUT 2 se aplica ao contexto brasileiro
+
+#### H2: Variáveis moderadoras influenciam os construtos no Brasil
+
+#### H3: Escolaridade, renda e estado civil são moderadores significativos
+
+## 📚 Referencial Teórico
+
+### Conceitos-Chave
+
+#### **Teoria Unificada de Aceitação e Uso da Tecnologia 2 - UTAUT 2**
+
+##### Criada por Venkatesh, Thong e Xu (2012)
+
+##### Baseada no UTAUT original (2003)
+
+##### Contexto de consumo individual de tecnologia
+
+##### **74%** de variância explicativa na intenção comportamental
+
+#### **Paradoxos Tecnológicos**
+
+##### Mick e Fournier (1998) - 8 paradoxos
+
+###### Controle vs. caos
+
+###### Liberdade vs. escravidão
+
+###### Novo vs. obsoleto
+
+###### Competência vs. incompetência
+
+###### Eficiência vs. ineficiência
+
+###### Supre vs. cria necessidades
+
+###### Assimilação vs. isolamento
+
+###### Engajamento vs. desengajamento
+
+##### Jarvenpaa e Lang (2005)
+
+###### Público vs. Privado
+
+###### Ilusão vs. Desilusão
+
+##### Mazmanian et al. (2006)
+
+###### Continuidade vs. Assincronicidade
+
+###### Autonomia vs. Vício
+
+### Modelos/Teorias Utilizados
+
+#### **UTAUT 2**
+
+##### Descrição
+
+###### Extensão do UTAUT para contexto de consumo
+
+##### Variáveis/Construtos
+
+###### **Expectativa de Desempenho**
+
+####### Percepção sobre potencialização do desempenho
+
+###### **Expectativa de Esforço**
+
+####### Facilidade ou dificuldade de uso
+
+###### **Influência Social**
+
+####### Percepção de importância para outros
+
+###### **Condições Facilitadoras**
+
+####### Noção de suporte para utilização
+
+###### **Motivações Hedônicas**
+
+####### Prazer, divertimento e interesse
+
+###### **Preço**
+
+####### Disposição para pagar e custo-benefício
+
+###### **Hábito**
+
+####### Rotina, costume e comportamento automático
+
+##### Aplicação no estudo
+
+##### Validação transcultural para português brasileiro
+
+##### Teste com smartphone como tecnologia
+
+### Estudos Anteriores Relevantes
+
+#### Estudo 1: Venkatesh, Thong e Xu (2012)
+
+##### Autor(es)
+
+##### Venkatesh, Thong e Xu
+
+##### Principais achados
+
+##### Validação original em contexto chinês
+
+##### Confirmada maioria das hipóteses
+
+##### Relação dos moderadores
+
+##### Relação com pesquisa atual
+
+##### Base teórica principal
+
+##### Modelo original a ser validado
+
+#### Estudo 2: Faria et al. (2016)
+
+##### Autor(es)
+
+##### Faria et al.
+
+##### Principais achados
+
+##### Primeira validação transcultural no Brasil
+
+##### Limitação: amostra de 142 alunos
+
+##### Relação com pesquisa atual
+
+##### Complementar com amostra maior e mais diversificada
+
+## 🔬 Metodologia
+
+### Caracterização da Pesquisa
+
+#### Natureza
+
+##### Aplicada
+
+#### Abordagem (quantitativa/qualitativa/mista)
+
+#### **Quantitativa**
+
+#### Tipo (exploratória/descritiva/explicativa)
+
+#### **Descritiva**
+
+#### Estratégia (survey/estudo de caso/experimento)
+
+#### **Survey**
+
+### População e Amostra
+
+#### População-alvo
+
+##### Consumidores de smartphone no Brasil
+
+#### Tipo de amostragem
+
+##### Não probabilística (conveniência)
+
+##### Localização estratégica (fluxo de pessoas)
+
+#### Tamanho da amostra
+
+##### **N = 1900** consumidores
+
+###### Aeroporto Internacional de Congonhas: 1308
+
+###### Rodoviária do Tietê: 592
+
+##### Pré-teste: 200 usuários em Ponta Porã-MS
+
+##### Amostra mínima calculada: 1537 (95% confiança)
+
+#### Critérios de inclusão/exclusão
+
+##### Maiores de 18 anos
+
+##### Usuários de smartphone
+
+### Instrumentos de Coleta de Dados
+
+#### Instrumento 1
+
+##### Tipo (questionário/entrevista/observação)
+
+##### **Questionário estruturado**
+
+##### Estrutura
+
+###### 11 questões sobre dados gerais
+
+###### 28 afirmativas para construtos (escala Likert 7 pontos)
+
+###### 16 aplicativos para identificação de uso
+
+##### Validação
+
+##### Baseado em Venkatesh, Thong e Xu (2012)
+
+##### Validado transculturalmente (7 etapas de Borsa, Damásio e Bandeira, 2012)
+
+### Procedimentos de Coleta
+
+#### Etapa 1
+
+##### Tradução do instrumento (professores bilingues)
+
+#### Etapa 2
+
+##### Síntese das versões traduzidas
+
+#### Etapa 3
+
+##### Avaliação por juízes experts
+
+#### Etapa 4
+
+##### Avaliação pelo público-alvo (25 alunos)
+
+#### Etapa 5
+
+##### Tradução reversa
+
+#### Etapa 6
+
+##### Estudo piloto (200 pessoas)
+
+#### Período de coleta
+
+##### Janeiro a março de 2017
+
+#### Taxa de resposta
+
+##### 100% (aplicação presencial)
+
+### Técnicas de Análise de Dados
+
+#### Análise quantitativa (se aplicável)
+
+##### Software utilizado
+
+##### **Excel**, **SPSS** e **AMOS**
+
+##### Testes estatísticos
+
+##### Estatística descritiva
+
+##### Modelagem de Equações Estruturais
+
+##### Análise fatorial confirmatória
+
+##### Índices de ajuste: Qui-quadrado/GL < 3; GFI, CFI, NFI, TLI > 0,95; RMSR < 0,05; RMSEA < 0,08
+
+### Considerações Éticas
+
+#### Aprovação comitê de ética
+
+##### Não mencionado no artigo
+
+#### Termo de consentimento
+
+##### Consentimento implícito (voluntariedade)
+
+#### Privacidade/anonimato
+
+##### Garantido anonimato nas respostas
+
+## 📊 Principais Achados
+
+### 🔑 Achado 1: **Validação Transcultural do Modelo**
+
+#### 📈 Evidências Quantitativas
+
+##### Modelo validado após 4 tentativas
+
+##### Transformação dos construtos com pesos
+
+###### ExDe = [0.16*ED1 + 0.30*ED2 + 0.28*ED3 + 0.26*ED4]
+
+###### ExEs = [0.21*EE1 + 0.23*EE2 + 0.27*EE3 + 0.29*EE4]
+
+###### InSo = [0.30*IS1 + 0.32*IS2 + 0.38*IS3]
+
+###### CoFa = [0.29*CF1 + 0.29*CF2 + 0.20*CF3 + 0.23*CF4]
+
+###### MoHe = [0.33*MH1 + 0.33*MH2 + 0.33*MH3]
+
+###### PR = [0.37*PR1 + 0.26*PR2 + 0.37*PR3]
+
+###### Hb = [0.29*HB1 + 0.31*HB2 + 0.17*HB3 + 0.22*HB4]
+
+###### InCo = [0.31*IC1 + 0.34*IC2 + 0.35*IC3]
+
+###### CoUs = [0.13*WhatsApp + 0.14*Facebook + 0.25*Google + 0.23*Youtube + 0.17*Maps + 0.08*Uber]
+
+#### 💬 Evidências Qualitativas
+
+##### Diferenças na tradução: "achar" vs. "considerar"; "pretender" vs. "planejar"
+
+##### Cinco afirmações diferentes em relação ao estudo de Faria et al. (2016)
+
+#### 🎯 Implicações
+
+##### Teóricas
+
+###### UTAUT 2 é aplicável ao contexto brasileiro
+
+##### Práticas
+
+###### Instrumento validado para pesquisas futuras
+
+### 🔑 Achado 2: **Diferenças no Modelo Final Brasileiro**
+
+#### 📈 Evidências
+
+##### Construto **Condições Facilitadoras** não tem relação com Intenção Comportamental
+
+##### Apenas ligação com Comportamento de Uso
+
+##### Índices de ajuste finais adequados
+
+###### Qui-quadrado/GL = 4.078 (< 3)
+
+###### GFI = 0.997 (> 0.95)
+
+###### CFI = 0.998 (> 0.95)
+
+###### RMSEA = 0.040 (< 0.08)
+
+#### 💬 Contexto
+
+##### Diferente do modelo original chinês
+
+##### Possível explicação: características específicas do consumidor brasileiro
+
+#### 🎯 Implicações
+
+##### Teóricas
+
+###### Necessidade de adaptação cultural do modelo
+
+##### Práticas
+
+##### Estratégias devem focar mais em comportamento efetivo que intenção
+
+### 🔑 Achado 3: **Perfil da Amostra Brasileira**
+
+#### 📈 Evidências
+
+##### Idade: 72,89% jovens e adultos
+
+###### 25-39 anos: 48,42%
+
+###### 40-59 anos: 24,47%
+
+##### Gênero: 52,3% mulheres
+
+##### Estado civil: 45,6% solteiros
+
+##### Escolaridade: ~50% ensino superior completo/pós-graduação
+
+##### Renda familiar: 32,10% (2-4 SM); 30,70% (4-10 SM)
+
+##### Experiência: ~60% até 5 anos de uso
+
+##### Representação de todos os estados brasileiros
+
+###### Sudeste: 62% (43,50% paulistas)
+
+###### Nordeste: 14,70%
+
+###### Sul: 13,90%
+
+###### Centro-Oeste e Norte: 9,4%
+
+##### 262 profissões diferentes identificadas
+
+#### 💬 Contexto
+
+##### Amostra diversificada representativa do Brasil
+
+##### Alto nível de escolaridade em comparação com média nacional
+
+#### 🎯 Implicações
+
+##### Teóricas
+
+##### Necessidade de mais estudos com classes C, D e E
+
+##### Práticas
+
+##### Estratégias podem ser segmentadas por perfil
+
+### 🔑 Achado 4: **Aplicativos Mais Utilizados**
+
+#### 📈 Evidências
+
+##### Sempre: WhatsApp, Facebook, Google, YouTube
+
+##### Às vezes até sempre: + Maps e UBER
+
+##### Construto Comportamento de Uso composto por 6 aplicativos
+
+#### 💬 Contexto
+
+##### Uso concentrado em aplicativos de comunicação e busca
+
+##### UBER aparece como inovação relevante
+
+#### 🎯 Implicações
+
+##### Práticas
+
+##### Empresas devem focar nesses aplicativos
+
+### 🔑 Achado 5: **Influência das Variáveis Moderadoras**
+
+#### 📈 Evidências Quantitativas
+
+##### **Idade**
+
+###### Expectativa de Desempenho: mais velhos (>32) - coeficiente 0,115\*
+
+###### Influência Social: mais velhos - coeficiente 0,121\*
+
+###### Expectativa de Esforço: mais novos - coeficiente -0,177\*
+
+###### Hábito: mais novos - coeficiente -0,076\*
+
+##### **Gênero**
+
+###### Expectativa de Esforço: homens - coeficiente -0,084\*
+
+###### Motivação Hedônica: mulheres - coeficiente 0,109\*
+
+###### Preço: mulheres - coeficiente 0,111\*
+
+##### **Experiência**
+
+###### Expectativa de Esforço: mais experientes (>5 anos) - coeficiente 0,087\*
+
+###### Influência Social: menos experientes - coeficiente -0,134\*
+
+###### Condições Facilitadoras: mais experientes - coeficiente 0,082\*
+
+###### Preço: menos experientes - coeficiente -0,191\*
+
+###### Hábito: mais experientes - coeficiente 0,055\*
+
+##### **Escolaridade**
+
+###### Influência Social: menor escolaridade - coeficiente -0,109\*
+
+###### Condições Facilitadoras: maior escolaridade - coeficiente 0,220\*
+
+###### Motivação Hedônica: menor escolaridade - coeficiente -0,128\*
+
+##### **Renda**
+
+###### Influência Social: menor renda - coeficiente -0,201\*
+
+###### Condições Facilitadoras: maior renda - coeficiente 0,224\*
+
+###### Motivação Hedônica: menor renda - coeficiente -0,092\*
+
+###### Preço: menor renda - coeficiente -0,203\*
+
+##### **Estado Civil**
+
+###### Expectativa de Desempenho: acompanhados - coeficiente 0,090\*
+
+###### Expectativa de Esforço: sozinhos - coeficiente -0,161\*
+
+#### 💬 Evidências Qualitativas
+
+##### Mais velhos percebem mais utilidade e são mais influenciados socialmente
+
+##### Mais novos têm maior facilidade e uso automatizado
+
+##### Homens têm maior familiaridade técnica
+
+##### Mulheres se divertem mais e se atentam ao preço
+
+##### Mais experientes têm menos dificuldade e crença positiva
+
+##### Menos experientes precisam de influência social e se preocupam com preço
+
+##### Menor escolaridade/renda: uso mais lúdico e por pertencimento
+
+##### Maior escolaridade/renda: melhores condições facilitadoras
+
+##### Acompanhados percebem mais produtividade
+
+##### Sozinhos percebem mais facilidade (principalmente solteiros)
+
+#### 🎯 Implicações
+
+##### Teóricas
+
+##### Confirmação de que características individuais moderam a adoção
+
+##### Novas variáveis (escolaridade, renda, estado civil) são relevantes
+
+##### Práticas
+
+##### Segmentação de estratégias por perfil do consumidor
+
+## 💭 Discussão
+
+### Interpretação dos Resultados
+
+#### Em relação ao objetivo 1
+
+##### UTAUT 2 validado transculturalmente para o Brasil
+
+##### Modelo final apresenta diferença: Condições Facilitadoras não afetam Intenção
+
+#### Em relação ao objetivo 2
+
+##### Idade, gênero e experiência exercem influência significativa
+
+##### Padrões similares a estudos internacionais
+
+#### Em relação ao objetivo 3
+
+##### Escolaridade, renda e estado civil são moderadores relevantes
+
+##### Explicam peculiaridades do consumidor brasileiro
+
+### Comparação com Literatura
+
+#### Convergências
+
+##### Estudo Venkatesh, Thong e Xu (2012)
+
+###### Modelo base confirmado
+
+###### Importância dos moderadores
+
+##### Estudos sobre idade (Morris, Venkatesh e Ackerman, 2005)
+
+###### Mais jovens adotam mais facilmente
+
+##### Estudos sobre gênero (Dittmar, Long e Meek, 2004)
+
+###### Mulheres mais motivadas por fatores sociais
+
+#### Divergências
+
+##### Modelo Faria et al. (2016)
+
+###### Amostra maior e mais diversificada
+
+###### Cinco afirmações diferentes na validação
+
+##### Possíveis explicações
+
+##### Diferenças culturais Brasil vs. China
+
+##### Características específicas do consumidor brasileiro
+
+### Contribuições Teóricas
+
+#### Para o campo de **Adoção de Tecnologia**
+
+##### Primeira validação completa do UTAUT 2 no Brasil com amostra representativa
+
+##### Inclusão de novas variáveis moderadoras
+
+##### Modelo adaptado para realidade brasileira
+
+#### Para teoria/modelo UTAUT
+
+##### Evidências de que Condições Facilitadoras não afetam Intenção no Brasil
+
+##### Confirmação da importância de variáveis sóciodemográficas
+
+### Contribuições Práticas
+
+#### Para gestores/profissionais
+
+##### Segmentação por perfil do consumidor
+
+###### Jovens: focar em facilidade e automatização
+
+###### Mulheres: enfatizar aspectos sociais e preço
+
+###### Mais experientes: explorar benefícios avançados
+
+###### Menor renda/escolaridade: focar em entretenimento e pertencimento
+
+##### Desenvolvimento de estratégias específicas
+
+#### Para políticas públicas
+
+##### Programas de inclusão digital
+
+##### Foco em Condições Facilitadoras para menor renda
+
+### Limitações do Estudo
+
+#### Limitação 1: Análise das moderadoras
+
+##### Natureza: Diferente do modelo original
+
+##### Impacto nos resultados: Não foi possível analisar moderação entre construtos e Intenção
+
+#### Limitação 2: Distribuição amostral
+
+##### Natureza: Não proporcional à população brasileira
+
+##### Impacto nos resultados: Super-representação do Sudeste
+
+#### Limitação 3: Nível de escolaridade
+
+##### Natureza: Amostra com alto nível educacional
+
+##### Impacto nos resultados: Dificulta generalização para classes C, D, E
+
+#### Limitação 4: Brasil heterogêneo
+
+##### Natureza: País gigantesco e miscigenado
+
+##### Impacto nos resultados: Peculiaridades regionais não capturadas
+
+#### Limitação 5: Estado civil
+
+##### Natureza: Agrupamento artificial (sozinhos vs. acompanhados)
+
+##### Impacto nos resultados: Solteiros, divorciados e viúvos podem diferir
+
+#### Limitação 6: Faixa etária
+
+##### Natureza: Apenas maiores de 18 anos
+
+##### Impacto nos resultados: Adolescentes não estudados
+
+#### Limitação 7: Smartphones ganhos
+
+##### Natureza: Incluídos na amostra
+
+##### Impacto nos resultados: Pode distorcer análise de preço
+
+## ✅ Conclusões
+
+### Síntese dos Principais Resultados
+
+#### UTAUT 2 validado para contexto brasileiro
+
+#### Modelo final apresenta diferença específica
+
+#### Seis variáveis moderadoras influenciam os construtos
+
+#### Amostra representativa de 1900 consumidores
+
+### Resposta à Pergunta de Pesquisa
+
+> _"Qual seria o design do modelo UTAUT 2 em contexto brasileiro?"_
+
+#### Resposta
+
+##### O modelo UTAUT 2 é aplicável ao Brasil, mas com adaptações
+
+##### Condições Facilitadoras não afetam Intenção Comportamental
+
+##### Escolaridade, renda e estado civil são moderadores importantes
+
+##### Perfil do consumidor brasileiro apresenta peculiaridades
+
+### Confirmação/Rejeição de Hipóteses
+
+#### H1: ✅ Confirmada - UTAUT 2 se aplica ao Brasil
+
+#### H2: ✅ Confirmada - Moderadores originais influenciam
+
+#### H3: ✅ Confirmada - Novas variáveis são moderadoras
+
+### Implicações Gerais
+
+#### Acadêmicas
+
+##### Necessidade de adaptação cultural de modelos
+
+##### Importância de variáveis sóciodemográficas
+
+#### Gerenciais
+
+##### Oportunidade de segmentação personalizada
+
+#### Sociais
+
+##### Inclusão digital precisa considerar perfis específicos
+
+## 🔮 Direções Futuras de Pesquisa
+
+### Sugestão 1
+
+#### Análise da moderação entre construtos
+
+##### Justificativa
+
+##### Não foi possível realizar como no modelo original
+
+##### Avançaria na compreensão do modelo
+
+### Sugestão 2
+
+#### Estudos comparativos entre regiões brasileiras
+
+##### Justificativa
+
+##### Capturaria peculiaridades culturais
+
+##### Brasil é muito diverso regionalmente
+
+### Sugestão 3
+
+#### Pesquisa com classes C, D e E
+
+##### Justificativa
+
+##### Amostra atual com alto nível de escolaridade
+
+##### Generalização limitada
+
+### Sugestão 4
+
+#### Idade cognitiva vs. cronológica
+
+##### Justificativa
+
+##### Idade biológica pode não refletir capacidade
+
+##### Fator relevante para adoção
+
+### Sugestão 5
+
+#### Comparação Latino-Americana
+
+##### Justificativa
+
+##### Poucos estudos na região
+
+##### Similaridades culturais podem existir
+
+### Sugestão 6
+
+#### Estudo com adolescentes
+
+##### Justificativa
+
+##### Faixa etária não incluída
+
+##### Importantes consumidores de tecnologia
+
+### Sugestão 7
+
+#### Outras tecnologias e aplicativos
+
+##### Justificativa
+
+##### Estudo focado em smartphone
+
+##### Outras tecnologias podem ter padrões diferentes
+
+## 📎 Informações Adicionais
+
+### Financiamento
+
+#### Não mencionado no artigo
+
+### Conflito de interesses
+
+#### Não declarado
+
+### Agradecimentos
+
+#### Não mencionados no artigo
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Configuração do Markmap
+        window.markmap = {
+            autoLoader: {
+                manual: false,
+                toolbar: false
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@latest"></script>
+    
+    <script>
+        function toggleFullscreen() {
+            const elem = document.querySelector('.markmap-container');
+            if (!document.fullscreenElement) {
+                elem.requestFullscreen().catch(err => {
+                    console.log(`Error attempting to enable fullscreen: ${err.message}`);
+                });
+            } else {
+                document.exitFullscreen();
+            }
+        }
+        
+        // Atalhos de teclado
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'F11') {
+                e.preventDefault();
+                toggleFullscreen();
+            }
+            if (e.key === 'F5' || (e.ctrlKey && e.key === 'r')) {
+                e.preventDefault();
+                window.location.reload();
+            }
+        });
+    </script>
+</body>
+</html>
