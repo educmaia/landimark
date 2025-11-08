@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, GraduationCap, Building2 } from "lucide-react";
+import { Mail, MessageCircle, Linkedin, GraduationCap, Building2 } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -56,11 +56,13 @@ export default function Footer() {
                 <span>eduardo.maia@must.edu</span>
               </a>
               <a
-                href="tel:+551999126-0742"
+                href="https://wa.me/5519991260742"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-3 text-sm hover:text-primary-400 transition-colors"
               >
-                <Phone className="w-5 h-5 flex-shrink-0" />
-                <span>(19) 99126-0742</span>
+                <MessageCircle className="w-5 h-5 flex-shrink-0" />
+                <span>WhatsApp: (19) 99126-0742</span>
               </a>
               <a
                 href="https://linkedin.com/in/eduardocamargomaia"
