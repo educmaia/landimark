@@ -1,7 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle2, FileText, Calendar, MessageSquare, BarChart } from "lucide-react";
+import {
+  CheckCircle2,
+  FileText,
+  Calendar,
+  MessageSquare,
+  BarChart,
+} from "lucide-react";
 
 export default function Process() {
   const steps = [
@@ -35,7 +41,7 @@ export default function Process() {
       title: "Entrevista",
       description:
         "Conversa estruturada sobre suas práticas de marketing digital e uso (ou não) de IA. Total flexibilidade e naturalidade.",
-      duration: "60-90 min",
+      duration: "45-90 min",
     },
     {
       number: "05",
@@ -65,8 +71,7 @@ export default function Process() {
           </div>
 
           <h2 className="section-title">
-            Como{" "}
-            <span className="text-gradient">funciona</span>?
+            Como <span className="text-gradient">funciona</span>?
           </h2>
           <p className="section-subtitle">
             Processo transparente e estruturado em 5 etapas simples
@@ -151,7 +156,9 @@ export default function Process() {
               <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <CheckCircle2 className="w-6 h-6 text-primary-600" />
               </div>
-              <h4 className="font-bold text-gray-900 mb-2">{guarantee.title}</h4>
+              <h4 className="font-bold text-gray-900 mb-2">
+                {guarantee.title}
+              </h4>
               <p className="text-sm text-gray-600">{guarantee.description}</p>
             </div>
           ))}

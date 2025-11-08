@@ -1,5 +1,3 @@
-"use client";
-
 import { Mail, Phone, Linkedin, GraduationCap, Building2 } from "lucide-react";
 
 export default function Footer() {

@@ -16,7 +16,7 @@ export default function Benefits() {
       icon: Clock,
       title: "Investimento Mínimo de Tempo",
       description:
-        "Apenas 60-90 minutos em uma única sessão. Você escolhe o melhor horário e formato (presencial ou online).",
+        "Apenas 45-90 minutos em uma única sessão. Você escolhe o melhor horário e formato (presencial ou online).",
       color: "primary",
     },
     {
@@ -74,8 +74,7 @@ export default function Benefits() {
           </div>
 
           <h2 className="section-title">
-            Por que{" "}
-            <span className="text-gradient">participar</span>?
+            Por que <span className="text-gradient">participar</span>?
           </h2>
           <p className="section-subtitle">
             Sua contribuição é valiosa e oferecemos retornos concretos pelo seu
@@ -137,7 +136,9 @@ export default function Benefits() {
             </p>
             <button
               onClick={() =>
-                document.getElementById("form")?.scrollIntoView({ behavior: "smooth" })
+                document
+                  .getElementById("form")
+                  ?.scrollIntoView({ behavior: "smooth" })
               }
               className="btn-primary"
             >

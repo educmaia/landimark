@@ -47,11 +47,12 @@ export const metadata: Metadata = {
     title: "Pesquisa: Marketing Digital e IA em PMEs",
     description: "Contribua para pesquisa acadêmica sobre transformação digital em empresas",
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({
@@ -64,6 +65,11 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#0284c7" />
+        {/* Preconnect para fontes Google */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* DNS prefetch para analytics */}
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
       </head>
       <body className="font-sans">
         <AnalyticsComponent />
