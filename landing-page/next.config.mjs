@@ -18,7 +18,6 @@ const nextConfig = {
 
   // Configuração experimental para melhor performance
   experimental: {
-    optimizeCss: true,
     optimizePackageImports: ['lucide-react', 'framer-motion'],
   },
 
