@@ -16,7 +16,7 @@ export default function FAQ() {
     {
       question: "Quanto tempo leva a entrevista?",
       answer:
-        "A entrevista dura entre 60 e 90 minutos, em uma única sessão. Você escolhe o melhor horário e formato (presencial em sua empresa ou online por videochamada).",
+        "A entrevista dura entre 45 e 90 minutos, em uma única sessão. Você escolhe o melhor horário e formato (presencial em sua empresa ou online por videochamada).",
     },
     {
       question: "Meus dados serão confidenciais?",
@@ -78,8 +78,7 @@ export default function FAQ() {
           </div>
 
           <h2 className="section-title">
-            Tire suas{" "}
-            <span className="text-gradient">dúvidas</span>
+            Tire suas <span className="text-gradient">dúvidas</span>
           </h2>
           <p className="section-subtitle">
             Respostas para as perguntas mais comuns sobre a pesquisa
@@ -141,14 +140,14 @@ export default function FAQ() {
               <strong className="text-gray-900">Ainda tem dúvidas?</strong>{" "}
               Entre em contato diretamente e teremos prazer em responder!
             </p>
-            <button
-              onClick={() =>
-                document.getElementById("form")?.scrollIntoView({ behavior: "smooth" })
-              }
-              className="btn-primary"
+            <a
+              href="https://wa.me/5519991260742"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary inline-block"
             >
               Fale Conosco
-            </button>
+            </a>
           </div>
         </motion.div>
       </div>

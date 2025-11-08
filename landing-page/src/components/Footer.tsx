@@ -53,7 +53,7 @@ export default function Footer() {
                 className="flex items-center gap-3 text-sm hover:text-primary-400 transition-colors"
               >
                 <Mail className="w-5 h-5 flex-shrink-0" />
-                <span>eduardo.maia@must.edu</span>
+                <span>eduardo@camargoemaia.com</span>
               </a>
               <a
                 href="https://wa.me/5519991260742"
