@@ -10,6 +10,7 @@ import {
   Users,
   Video,
   BookOpen,
+  Bot,
 } from "lucide-react";
 
 type Benefit = {
@@ -23,11 +24,19 @@ type Benefit = {
 export default function Benefits() {
   const benefits: Benefit[] = [
     {
+      icon: Bot,
+      title: "IA Especializada em Marketing Digital",
+      description:
+        "Acesso exclusivo a uma inteligência artificial especializada em marketing digital para micro, pequenos e médios negócios. Tire todas as suas dúvidas sobre estratégias, ferramentas e práticas de marketing.",
+      color: "primary",
+      highlight: true,
+    },
+    {
       icon: Video,
       title: "Vídeo Exclusivo sobre IA",
       description:
         "Receba acesso gratuito a um vídeo completo sobre Marketing Digital e IA, feito 100% com inteligência artificial e voltado especificamente para Micro e Pequenas Empresas.",
-      color: "primary",
+      color: "secondary",
       highlight: true,
     },
     {
@@ -35,7 +44,7 @@ export default function Benefits() {
       title: "Guia de Ferramentas",
       description:
         "Guia prático e completo com as melhores ferramentas de marketing digital para PMEs, incluindo opções gratuitas e pagas.",
-      color: "secondary",
+      color: "primary",
       highlight: true,
     },
     {
