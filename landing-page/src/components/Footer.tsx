@@ -46,7 +46,7 @@ export default function Footer() {
               <p>
                 <strong className="text-white">Orientador:</strong>
                 <br />
-                Prof. Dr. Marcos Crivelaro
+                <a href="http://lattes.cnpq.br/9435178393114804" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400 transition-colors">Prof. Dr. Marcos Crivelaro</a>
               </p>
             </div>
           </div>

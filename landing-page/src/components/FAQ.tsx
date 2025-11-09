@@ -67,7 +67,7 @@ export default function FAQ() {
           >
             MUST University
           </a>
-          , sob orientação do Prof. Dr. Marcos Crivelaro, seguindo rigorosos
+          , sob orientação do {" "}<a href="http://lattes.cnpq.br/9435178393114804" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-semibold">Prof. Dr. Marcos Crivelaro</a>, seguindo rigorosos
           padrões acadêmicos e éticos.
         </>
       ),

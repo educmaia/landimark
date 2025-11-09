@@ -46,7 +46,7 @@ export default function About() {
               >
                 MUST University
               </a>
-              , sob orientação do <strong>Prof. Dr. Marcos Crivelaro</strong>.
+              , sob orientação do {" "}<a href="http://lattes.cnpq.br/9435178393114804" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-semibold">Prof. Dr. Marcos Crivelaro</a>.
             </p>
 
             {/* Cards de destaque */}
