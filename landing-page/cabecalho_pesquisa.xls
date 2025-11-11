@@ -1,0 +1,28 @@
+<table border="1">
+  <tr>
+    <th>Data/Hora</th>
+    <th>Nome da Empresa</th>
+    <th>Localização</th>
+    <th>Número de Funcionários</th>
+    <th>Setor</th>
+    <th>Outro Setor</th>
+    <th>Presença Digital</th>
+    <th>Canais Digitais</th>
+    <th>Outros Canais</th>
+    <th>Conhecimento IA</th>
+    <th>Uso IA</th>
+    <th>Tarefas IA</th>
+    <th>Outras Tarefas</th>
+    <th>Motivos Parada IA</th>
+    <th>Outros Motivos</th>
+    <th>Tempo Presença Digital</th>
+    <th>Investimento Ads</th>
+    <th>Nome do Responsável</th>
+    <th>Cargo</th>
+    <th>Email</th>
+    <th>WhatsApp</th>
+    <th>Disponibilidade Entrevista</th>
+    <th>Observações</th>
+    <th>Status Email</th>
+  </tr>
+</table>
