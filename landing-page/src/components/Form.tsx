@@ -53,10 +53,9 @@ const formSchema = z
     localizacao: z.enum(["capivari", "outra"], {
       required_error: "Selecione a localização da empresa",
     }),
-    numeroFuncionarios: z.enum(
-      ["ate-9", "10-49", "50-249", "250+"],
-      { required_error: "Informe o número aproximado de funcionários" }
-    ),
+    numeroFuncionarios: z.enum(["ate-9", "10-49", "50-249", "250+"], {
+      required_error: "Informe o número aproximado de funcionários",
+    }),
     setor: z.enum(["comercio", "servicos", "industria", "outro"], {
       required_error: "Informe o setor de atuação",
     }),
@@ -66,21 +65,17 @@ const formSchema = z
     }),
     canaisDigitais: z.array(z.string()).default([]),
     outroCanal: optionalText,
-    conhecimentoIA: z
-      .enum(["usa", "conhece", "nao-conhece"])
-      .optional(),
+    conhecimentoIA: z.enum(["usa", "conhece", "nao-conhece"]).optional(),
     usoIA: z
-      .enum(
-      [
+      .enum([
         "regular",
         "ocasional",
         "testou",
         "considerando",
         "nao-pretende",
         "nao-sabe",
-      ]
-    )
-    .optional(),
+      ])
+      .optional(),
     tarefasIA: z.array(z.string()).default([]),
     outraTarefaIA: optionalText,
     motivosParadaIA: z.array(z.string()).default([]),
@@ -120,7 +115,8 @@ const formSchema = z
       ctx.addIssue({
         code: z.ZodIssueCode.custom,
         path: ["numeroFuncionarios"],
-        message: "A pesquisa contempla apenas empresas com até 249 funcionários.",
+        message:
+          "A pesquisa contempla apenas empresas com até 249 funcionários.",
       });
     }
 
@@ -210,9 +206,9 @@ type FormData = z.infer<typeof formSchema>;
 
 export default function Form() {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">(
-    "idle"
-  );
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
 
   const {
     register,
@@ -300,8 +296,7 @@ export default function Form() {
             </div>
 
             <h2 className="section-title">
-              Pronto para{" "}
-              <span className="text-gradient">participar</span>?
+              Pronto para <span className="text-gradient">participar</span>?
             </h2>
             <p className="section-subtitle">
               Preencha o formulário abaixo e entraremos em contato em breve
@@ -324,9 +319,9 @@ export default function Form() {
                 </h3>
                 <p className="text-lg text-gray-600 mb-6">
                   Obrigado por se inscrever! Entraremos em contato em breve para
-                  confirmar sua participação e agendar a entrevista. Você receberá
-                  acesso ao <strong>vídeo exclusivo sobre IA</strong> e ao{" "}
-                  <strong>guia de ferramentas</strong> após a confirmação.
+                  confirmar sua participação e agendar a entrevista. Você
+                  receberá acesso ao <strong>vídeo exclusivo sobre IA</strong> e
+                  ao <strong>guia de ferramentas</strong> após a confirmação.
                 </p>
                 <button
                   onClick={() => setSubmitStatus("idle")}
@@ -340,7 +335,7 @@ export default function Form() {
                 {/* Bloco A - Triagem */}
                 <div className="space-y-6">
                   <h3 className="text-2xl font-bold text-gray-900 border-b pb-3">
-                    Bloco A — Triagem de Elegibilidade
+                    Seus Dados
                   </h3>
 
                   <div className="grid md:grid-cols-2 gap-6">
@@ -380,7 +375,9 @@ export default function Form() {
                               value={option.value}
                               className="w-4 h-4 text-primary-600 focus:ring-primary-500"
                             />
-                            <span className="text-gray-700">{option.label}</span>
+                            <span className="text-gray-700">
+                              {option.label}
+                            </span>
                           </label>
                         ))}
                       </div>
@@ -394,8 +391,8 @@ export default function Form() {
 
                   {localizacao === "outra" && (
                     <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg text-amber-800">
-                      No momento a pesquisa contempla apenas empresas situadas em
-                      Capivari-SP. Agradecemos sua intenção de participar!
+                      No momento a pesquisa contempla apenas empresas situadas
+                      em Capivari-SP. Agradecemos sua intenção de participar!
                     </div>
                   )}
 
@@ -421,7 +418,9 @@ export default function Form() {
                               value={option.value}
                               className="w-4 h-4 text-primary-600 focus:ring-primary-500"
                             />
-                            <span className="text-gray-700">{option.label}</span>
+                            <span className="text-gray-700">
+                              {option.label}
+                            </span>
                           </label>
                         ))}
                       </div>
@@ -434,7 +433,8 @@ export default function Form() {
 
                     {numeroFuncionarios === "250+" && (
                       <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg text-amber-800">
-                        O estudo atual é voltado para PMEs (até 249 colaboradores).
+                        O estudo atual é voltado para PMEs (até 249
+                        colaboradores).
                       </div>
                     )}
                   </div>
@@ -467,7 +467,9 @@ export default function Form() {
                               value={option.value}
                               className="w-4 h-4 text-primary-600 focus:ring-primary-500"
                             />
-                            <span className="text-gray-700">{option.label}</span>
+                            <span className="text-gray-700">
+                              {option.label}
+                            </span>
                           </label>
                         ))}
                       </div>
@@ -494,7 +496,8 @@ export default function Form() {
 
                   <div className="space-y-3">
                     <label className="block text-sm font-semibold text-gray-700">
-                      Presença digital ativa (atualizada nos últimos 3 meses) *
+                      Uso ativo de redes sociais (Instagram, Facebook, Tiktok,
+                      Whatsapp) para vendas? *
                     </label>
                     <div className="flex flex-wrap gap-4">
                       {[
@@ -576,12 +579,14 @@ export default function Form() {
                 {isEligibleForBlocos && (
                   <div className="space-y-6 pt-6">
                     <h3 className="text-2xl font-bold text-gray-900 border-b pb-3">
-                      Bloco B — Posicionamento frente à IA Generativa
+                      Posicionamento frente à IA Generativa (ChatGPT, Gemini,
+                      Claude, etc)
                     </h3>
 
                     <div className="space-y-4">
                       <label className="block text-sm font-semibold text-gray-700">
-                        Você conhece ferramentas de IA Generativa? *
+                        Você conhece ferramentas de IA Generativa (ChatGPT,
+                        Gemini, Claude, etc)? *
                       </label>
                       <div className="flex flex-wrap gap-4">
                         {[
@@ -605,7 +610,9 @@ export default function Form() {
                               value={option.value}
                               className="w-4 h-4 text-primary-600 focus:ring-primary-500"
                             />
-                            <span className="text-gray-700">{option.label}</span>
+                            <span className="text-gray-700">
+                              {option.label}
+                            </span>
                           </label>
                         ))}
                       </div>
@@ -659,7 +666,9 @@ export default function Form() {
                               value={option.value}
                               className="w-4 h-4 text-primary-600 focus:ring-primary-500"
                             />
-                            <span className="text-gray-700">{option.label}</span>
+                            <span className="text-gray-700">
+                              {option.label}
+                            </span>
                           </label>
                         ))}
                       </div>
@@ -761,7 +770,7 @@ export default function Form() {
                 {isEligibleForBlocos && (
                   <div className="space-y-6 pt-6">
                     <h3 className="text-2xl font-bold text-gray-900 border-b pb-3">
-                      Bloco C — Maturidade Digital
+                      Índice de Maturidade Digital
                     </h3>
 
                     <div className="space-y-3">
@@ -785,7 +794,9 @@ export default function Form() {
                               value={option.value}
                               className="w-4 h-4 text-primary-600 focus:ring-primary-500"
                             />
-                            <span className="text-gray-700">{option.label}</span>
+                            <span className="text-gray-700">
+                              {option.label}
+                            </span>
                           </label>
                         ))}
                       </div>
@@ -804,7 +815,10 @@ export default function Form() {
                         {[
                           { value: "regular", label: "Sim, regularmente" },
                           { value: "ocasional", label: "Sim, ocasionalmente" },
-                          { value: "parou", label: "Já investimos, mas paramos" },
+                          {
+                            value: "parou",
+                            label: "Já investimos, mas paramos",
+                          },
                           { value: "nunca", label: "Nunca investimos" },
                         ].map((option) => (
                           <label
@@ -817,7 +831,9 @@ export default function Form() {
                               value={option.value}
                               className="w-4 h-4 text-primary-600 focus:ring-primary-500"
                             />
-                            <span className="text-gray-700">{option.label}</span>
+                            <span className="text-gray-700">
+                              {option.label}
+                            </span>
                           </label>
                         ))}
                       </div>
@@ -833,7 +849,7 @@ export default function Form() {
                 {/* Bloco D - Disponibilidade */}
                 <div className="space-y-6 pt-6">
                   <h3 className="text-2xl font-bold text-gray-900 border-b pb-3">
-                    Bloco D — Disponibilidade para Participação
+                    Disponibilidade para Participação (Contamos com sua ajuda)
                   </h3>
 
                   <div className="grid md:grid-cols-2 gap-6">
@@ -912,7 +928,10 @@ export default function Form() {
                     </label>
                     <div className="space-y-2">
                       {[
-                        { value: "presencial", label: "Sim, presencial em Capivari" },
+                        {
+                          value: "presencial",
+                          label: "Sim, presencial em Capivari",
+                        },
                         {
                           value: "online",
                           label: "Sim, online (Zoom / Google Meet)",
@@ -921,7 +940,10 @@ export default function Form() {
                           value: "qualquer-formato",
                           label: "Sim, qualquer formato",
                         },
-                        { value: "talvez", label: "Talvez, preciso saber mais" },
+                        {
+                          value: "talvez",
+                          label: "Talvez, preciso saber mais",
+                        },
                         { value: "nao", label: "Não tenho disponibilidade" },
                       ].map((option) => (
                         <label
@@ -990,8 +1012,8 @@ export default function Form() {
                   </button>
 
                   <p className="text-sm text-gray-500 text-center mt-4">
-                    Ao enviar, você concorda em participar da pesquisa. Seus dados
-                    serão tratados com total confidencialidade.
+                    Ao enviar, você concorda em participar da pesquisa. Seus
+                    dados serão tratados com total confidencialidade.
                   </p>
                 </div>
               </form>
