@@ -944,8 +944,10 @@ export default function Form() {
                           value: "talvez",
                           label: "Talvez, preciso saber mais",
                         },
-                        { value: "nao", label: "Não tenho disponibilidade
-                          " },
+                        {
+                          value: "nao",
+                          label: "Não tenho disponibilidade",
+                        },
                       ].map((option) => (
                         <label
                           key={option.value}
