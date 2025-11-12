@@ -929,6 +929,10 @@ export default function Form() {
                     <div className="space-y-2">
                       {[
                         {
+                          value: "qualquer-formato",
+                          label: "Sim, qualquer formato",
+                        },
+                        {
                           value: "presencial",
                           label: "Sim, presencial em Capivari",
                         },
@@ -937,14 +941,11 @@ export default function Form() {
                           label: "Sim, online (Zoom / Google Meet)",
                         },
                         {
-                          value: "qualquer-formato",
-                          label: "Sim, qualquer formato",
-                        },
-                        {
                           value: "talvez",
                           label: "Talvez, preciso saber mais",
                         },
-                        { value: "nao", label: "Não tenho disponibilidade" },
+                        { value: "nao", label: "Não tenho disponibilidade
+                          " },
                       ].map((option) => (
                         <label
                           key={option.value}
