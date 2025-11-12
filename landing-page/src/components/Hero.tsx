@@ -63,7 +63,7 @@ export default function Hero() {
             <div className="space-y-3 mb-8">
               {[
                 "Acesso exclusivo a IA especializada em marketing digital para MPMEs - tire todas suas dúvidas",
-                "Um guia de sugestões do que perguntar a IA e de ferramentas de marketing ou gratuitas ou com bom limite de uso gratuito",
+                "Um guia com 50 sugestões do que perguntar a IA e de ferramentas de marketing ou gratuitas ou com bom limite de uso gratuito",
                 "Acesso a um vídeo exclusivo sobre IA e Marketing Digital (feito totalmente por IA)",
                 "Preencha em 2-3 minutos",
                 "Total confidencialidade garantida",
